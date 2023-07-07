@@ -3,6 +3,11 @@
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.navbar{
-    background-color: #292b2c;
+
+#esperti{
+    padding-top: 60px;
+}
+
+#esperti .card-body{
+    height: 300px;
 }
