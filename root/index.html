@@ -42,13 +42,14 @@
     <h1 class="display-4">Digital Marketing Conference</h1>
     <p class="lead">la conferenza sul Digital Marketing numero uno in Italia</p>
     <div class="btn-group btn-group-lg">
-      <button type="button" class="btn btn-primary">Registrati</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registrazione"
+        class="btn btn-primary">Registrati</button>
       <a href="#esperti" class="btn btn-light">Gli esperti</a>
     </div>
   </div>
   <!--FINE SEZIONE 2-->
   <!--INIZIO SEZIONE 3-->
-  <div class="container text-center mt-3">
+  <div class="bg1 container text-center mt-3">
     <div class="row">
       <div class="col-md">
         <h3>Gli esperti</h3>
@@ -64,7 +65,19 @@
       </div>
       <div class="col-md-6">
         <h3>Il Digital Marketing</h3>
-        <img src="./images/marketing.jpg" class="img-fluid" alt="Digital marketing">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/marketing.jpg" class="rounded  img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/wepik-export-20230710130523ncdx.jpeg" class="rounded  img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/2wepik-export-20230710130718nkA7.jpeg" class="rounded  img-fluid" alt="...">
+            </div>
+          </div>
+        </div>
 
         <p>Il digital marketing è un campo in continua evoluzione, in cui strategie e strumenti si trasformano
           rapidamente. Presso la nostra conferenza, scoprirai le ultime tendenze e approcci vincenti nel settore.</p>
@@ -95,7 +108,8 @@
           <img src="./images/Amalia-Rossi.jpg" class="card-img-top" alt="esperta Amalia Rossi">
           <div class="card-body">
             <h4 class="card-title">Amalia Rossi</h4>
-            <p class="card-text">Esperta di marketing digitale con anni di esperienza nel settore.<br>Specializzata in strategie di social media marketing e ottimizzazione dei motori di ricerca.</p>
+            <p class="card-text">Esperta di marketing digitale con anni di esperienza nel settore.<br>Specializzata in
+              strategie di social media marketing e ottimizzazione dei motori di ricerca.</p>
           </div>
         </div>
       </div>
@@ -106,7 +120,8 @@
           <img src="./images/Marco-Bianchi.jpg" class="card-img-top" alt="esperto Marco-Bianchi">
           <div class="card-body">
             <h4 class="card-title">Marco Bianchi</h4>
-            <p class="card-text">Consulente di marketing con una vasta conoscenza di campagne pubblicitarie online. Ha lavorato con diverse aziende per aumentare la visibilità del loro marchio.</p>
+            <p class="card-text">Consulente di marketing con una vasta conoscenza di campagne pubblicitarie online. Ha
+              lavorato con diverse aziende per aumentare la visibilità del loro marchio.</p>
           </div>
         </div>
       </div>
@@ -135,7 +150,8 @@
           <img src="./images/Sara-Neri.jpg" class="card-img-top" alt="Sara-Neri">
           <div class="card-body">
             <h4 class="card-title">Sara Neri</h4>
-            <p class="card-text">Consulente di e-commerce con competenze tecniche avanzate. Ha aiutato numerosi negozi online a migliorare le loro conversioni e le esperienze degli utenti.</p>
+            <p class="card-text">Consulente di e-commerce con competenze tecniche avanzate. Ha aiutato numerosi negozi
+              online a migliorare le loro conversioni e le esperienze degli utenti.</p>
           </div>
         </div>
       </div>
@@ -144,7 +160,8 @@
           <img src="./images/Alessandro-Rossi.jpg" class="card-img-top" alt="Alessandro-Rossi">
           <div class="card-body">
             <h4 class="card-title">Alessandro Rossi</h4>
-            <p class="card-text">Esperto di branding e posizionamento del marchio. Ha lavorato con diverse aziende per creare identità di marca uniche e memorabili.</p>
+            <p class="card-text">Esperto di branding e posizionamento del marchio. Ha lavorato con diverse aziende per
+              creare identità di marca uniche e memorabili.</p>
           </div>
         </div>
 
@@ -217,6 +234,40 @@
     </div>
   </div>
   <!--FINE SEZIONE 6-->
+  <!--START MODAL-->
+  <div class="modal fade" id="registrazione" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-5" id="exampleModalLabel">Registrati all'evento</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Nome" aria-label="Nome">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Cognome" aria-label="Cognome">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mt-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="text" class="form-control">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Invia</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--END MODAL-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>

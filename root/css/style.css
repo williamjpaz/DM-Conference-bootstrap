@@ -9,5 +9,11 @@
 }
 
 #esperti .card-body{
-    height: 200px;
+    height: 20em;
+}
+.carousel-item>img{
+ height: 300px;
+}
+.bg1{
+    background-color:357, 19%, 64%;
 }
