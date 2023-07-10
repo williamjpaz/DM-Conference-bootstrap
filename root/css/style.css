@@ -10,10 +10,14 @@
 
 #esperti .card-body{
     height: 20em;
+    background-color:rgba(128, 128, 128, 0.283);
 }
 .carousel-item>img{
  height: 300px;
 }
-.bg1{
-    background-color:357, 19%, 64%;
+body{
+    background: url(../images/fabio-oyXis2kALVg-unsplash.jpg);
+    background-size:contain;
+    background-repeat: repeat;
+    background-position:center;
 }
